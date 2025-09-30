@@ -12,7 +12,7 @@
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f7f6; /* 浅灰色背景 */
+            background-color: #f4f7f6;
             color: #333;
             line-height: 1.6;
         }
@@ -20,18 +20,18 @@
             max-width: 900px;
             margin: 40px auto;
             padding: 30px;
-            background-color: #ffffff; /* 白色内容区域 */
+            background-color: #ffffff;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
         }
         header {
             text-align: center;
             padding-bottom: 20px;
-            border-bottom: 3px solid #007bff; /* 蓝色分割线 */
+            border-bottom: 3px solid #007bff;
             margin-bottom: 30px;
         }
         header h1 {
-            color: #007bff; /* 标题颜色 */
+            color: #007bff;
             font-size: 2.5em;
             margin-bottom: 5px;
         }
@@ -51,9 +51,21 @@
             font-size: 1.1em;
             margin-bottom: 20px;
         }
+        /* 图片样式 */
+        .project-image {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        .project-image img {
+            max-width: 150px;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
         .download-links a {
             display: inline-block;
-            background-color: #28a745; /* 绿色按钮 */
+            background-color: #28a745;
             color: white;
             padding: 10px 20px;
             margin-right: 15px;
@@ -79,15 +91,15 @@
         }
 
         .social-links a {
-            color: #007bff; /* 图标颜色 */
-            font-size: 2.5em; /* 图标大小 */
-            margin: 0 15px; /* 图标之间的间距 */
+            color: #007bff;
+            font-size: 2.5em;
+            margin: 0 15px;
             text-decoration: none;
             transition: color 0.3s ease;
         }
 
         .social-links a:hover {
-            color: #0056b3; /* 鼠标悬停时的颜色 */
+            color: #0056b3;
         }
     </style>
 </head>
@@ -105,6 +117,10 @@
                 它拥有极其简洁的用户界面，**无需任何专业知识**，只需点点按钮即可轻松、安全地完成存档格式的转换。无论是资深玩家还是新手，都能快速上手。
             </p>
             
+            <div class="project-image">
+                <img src="https://i.ibb.co/L50WjV5/image.png" alt="方界桥软件图标">
+            </div>
+
             <h3>🚀 软件下载</h3>
             <div class="download-links">
                 <a href="https://pan.baidu.com/s/1EPgEZlMZmj3kX9d5YQGXJw?pwd=aa7s" target="_blank">
@@ -133,7 +149,7 @@
                 <a href="https://space.bilibili.com/400237962" target="_blank" aria-label="Bilibili">
                     <i class="fab fa-bilibili"></i>
                 </a>
-                </div>
+            </div>
             <p>Powered by GitHub Pages. © 2025 朴委员长. All Rights Reserved.</p>
         </footer>
     </div>
