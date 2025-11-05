@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     
     <style>
+        /* CSS 样式部分 (保持不变) */
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
             margin: 0;
@@ -50,195 +51,14 @@
             font-size: 1.1em;
             margin-bottom: 20px;
         }
-        /* 图片样式 */
         .project-image {
             text-align: center;
             margin-bottom: 25px;
         }
         .project-image img {
-            max-width: 150px; /* 控制图片最大宽度 */
+            max-width: 150px;
             height: auto;
             border-radius: 20px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
-
-        .download-links a {
-            display: inline-block;
-            background-color: #28a745;
-            color: white;
-            padding: 10px 20px;
-            margin-right: 15px;
-            margin-top: 10px;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-        .download-links a:hover {
-            background-color: #218838;
-        }
-        footer {
-            text-align: center;
-            padding-top: 20px;
-            color: #777;
-            font-size: 0.9em;
-        }
-
-        /* 社交链接样式 */
-        .social-links {
-            margin-top: 20px;
-            margin-bottom: 15px;
-        }
-
-        .social-links a {
-            color: #007bff;
-            font-size: 2.5em;
-            margin: 0 15px;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        .social-links a:hover {
-            color: #0056b3;
-        }
-
-        /* --- 语言切换按钮样式 --- */
-        #lang-toggle-btn {
-            padding: 8px 16px;
-            font-size: 0.9em;
-            font-weight: 500;
-            cursor: pointer;
-            border-radius: 5px;
-            border: 1px solid #007bff;
-            background-color: white;
-            color: #007bff;
-            transition: all 0.3s ease;
-            margin-top: 15px;
-        }
-        #lang-toggle-btn:hover {
-            background-color: #007bff;
-            color: white;
-        }
-        /* --- 样式结束 --- */
-    </style>
-</head>
-<body>
-    <div class="container">
-        <header>
-            <h1 id="header-title">朴委员长的主页</h1>
-            <p id="header-subtitle">专注于高效、实用的工具软件开发</p>
-            
-            <button id="lang-toggle-btn">English</button>
-            
-        </header>
-
-        <section class="project-card">
-            <h2 id="project-title"> 方界桥 (Chunker Bridge)</h2>
-            <p id="project-desc">
-                「方界桥」是一款致力于解决 **Minecraft Java 版**与 **基岩版**存档格式转换问题的实用工具软件。
-                它拥有极其简洁的用户界面，**无需任何专业知识**，只需点点按钮即可轻松、安全地完成存档格式的转换。无论是资深玩家还是新手，都能快速上手。
-            </p>
-            
-            <div class="project-image">
-                <img id="project-img" src="images/icon.png" alt="方界桥软件图标">
-            </div>
-
-            <h3 id="download-title">🚀 软件下载</h3>
-            <div class="download-links">
-                <a id="link-baidu" href="https://pan.baidu.com/s/1EPgEZlMZmj3kX9d5YQGXJw?pwd=aa7s" target="_blank">
-                    下载链接 1 (百度网盘)
-                </a>
-                <p id="code-baidu" style="margin-top: 5px; color: #555; font-size: 0.9em;">提取码: **aa7s**</p>
-
-                <a id="link-lanzou" href="https://wwqi.lanzoue.com/iWEZg37br6ni" target="_blank">
-                    下载链接 2 (蓝奏云)
-                </a>
-                <p id="code-lanzou" style="margin-top: 5px; color: #555; font-size: 0.9em;">密码: **c2pg**</p>
-            </div>
-        </section>
-
-        <section>
-            <h2 id="about-title">✨ 关于朴委员长</h2>
-            <p id="about-p1">一位普通的独立开发者。</p>
-            <p id="about-p2">如果您在使用我的软件时遇到任何问题，或有新的功能建议，欢迎联系我！</p>
-            <p id="about-p3">
-                联系方式：
-                QQ:3607233453
-            </p>
-        </section>
-
-        <footer>
-            <div class="social-links">
-                <a href="https://space.bilibili.com/400237962" target="_blank" aria-label="Bilibili">
-                    <i class="fab fa-bilibili"></i>
-                </a>
-            </div>
-            <p id="footer-text">Powered by GitHub Pages. © 2025 朴委员长. All Rights Reserved.</p>
-        </footer>
-    </div>
-
-
-<script>
-    // 1. 定义一个变量来跟踪当前语言，'zh' 代表中文
-    let currentLang = 'zh';
-
-    // 2. 创建一个包含所有翻译文本的对象
-    const translations = {
-        'zh': {
-            'pageTitle': '朴委员长的主页',
-            'header-title': '朴委员长的主页',
-            'header-subtitle': '专注于高效、实用的工具软件开发',
-            'lang-toggle-btn': 'English',
-            'project-title': '方界桥 (Chunker Bridge)',
-            'project-desc': '「方界桥」是一款致力于解决 **Minecraft Java 版**与 **基岩版**存档格式转换问题的实用工具软件。 它拥有极其简洁的用户界面，**无需任何专业知识**，只需点点按钮即可轻松、安全地完成存档格式的转换。无论是资深玩家还是新手，都能快速上手。',
-            'project-img-alt': '方界桥软件图标',
-            'download-title': '🚀 软件下载',
-            'link-baidu': '下载链接 1 (百度网盘)',
-            'code-baidu': '提取码: **aa7s**',
-            'link-lanzou': '下载链接 2 (蓝奏云)',
-            'code-lanzou': '密码: **c2pg**',
-            'about-title': '✨ 关于朴委员长',
-            'about-p1': '一位普通的独立开发者。',
-            'about-p2': '如果您在使用我的软件时遇到任何问题，或有新的功能建议，欢迎联系我！',
-            'about-p3': '联系方式：',
-            'footer-text': 'Powered by GitHub Pages. © 2025 朴委员长. All Rights Reserved.'
-        },
-        'en': {
-            'pageTitle': "pwyz's Homepage",
-            'header-title': "pwyz's Homepage",
-            'header-subtitle': 'Focusing on the development of efficient and practical utility software',
-            'lang-toggle-btn': '中文',
-            'project-title': 'Chunker Bridge',
-            'project-desc': 'Chunker Bridge is a utility tool dedicated to solving the problem of converting Minecraft save formats between the **Java Edition** and the **Bedrock Edition**. It has an extremely simple user interface. **No professional knowledge is required**; you can easily and safely complete the save format conversion with just a few clicks. Both veteran players and novices can get started quickly.',
-            'project-img-alt': 'Chunker Bridge Software Icon',
-            'download-title': '🚀 Software Download',
-            'link-baidu': 'Download Link 1 (Baidu Netdisk)',
-            'code-baidu': 'Access Code: **aa7s**',
-            'link-lanzou': 'Download Link 2 (Lanzou Cloud)',
-            'code-lanzou': 'Password: **c2pg**',
-            'about-title': '✨ About pwyz',
-            'about-p1': 'An ordinary independent developer.',
-            // --- 修正：将 'about-to-p2' 改为 'about-p2' ---
-            'about-p2': 'If you encounter any problems while using my software, or have suggestions for new features, please feel free to contact me!',
-            'about-p3': 'Contact:',
-            'footer-text': 'Powered by GitHub Pages. © 2025 pwyz. All Rights Reserved.'
-        }
-    };
-
-    // 3. 编写切换语言的函数
-    function toggleLanguage() {
-        // 切换语言状态
-        currentLang = (currentLang === 'zh') ? 'en' : 'zh';
-        
-        // 更新 <html> 标签的 lang 属性
-        document.documentElement.lang = (currentLang === 'zh') ? 'zh-CN' : 'en';
-
-        // 获取当前语言对应的翻译集
-        const langSet = translations[currentLang];
-        
-        // 遍历翻译集，更新页面上所有元素的文本
-        document.getElementById('pageTitle').innerHTML = langSet.pageTitle;
-        document.getElementById('header-title').innerHTML = langSet['header-title'];
-        document.getElementById('header-subtitle').innerHTML = langSet['header-subtitle'];
-        document.getElementById('lang-toggle-btn').innerHTML = langSet['lang-toggle-btn'];
-        document.getElementById('project-title').innerHTML = langSet['project-title'];
-        document.getElementById('project-desc').innerHTML = lang
+        .download
